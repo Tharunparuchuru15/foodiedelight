@@ -1,70 +1,113 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# FOODIEDELIGHT Restaurant Management Application
 
-## Available Scripts
+## Project Overview
 
-In the project directory, you can run:
+This is a simple restaurant management application built with React.js. It allows users to:
+- Add, edit, and delete restaurants.
+- View the list of restaurants with pagination.
+- Validate form inputs when adding/editing restaurants.
+- Handle API interactions (mock API) asynchronously without full-page reloads.
+- Test coverage for major components and functionalities with Jest and React Testing Library.
 
-### `npm start`
+## Table of Contents
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [How to Run the Project](#how-to-run-the-project)
+- [Screenshots](#screenshots)
+- [Test Coverage](#test-coverage)
+- [Time Breakdown](#time-breakdown)
+- [Steps for Future Enhancements](#steps-for-future-enhancements)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
+- **React.js**: Frontend library for building the UI.
+- **Jest**: Testing framework for unit and integration testing.
+- **React Testing Library**: Utility for testing React components.
+- **CSS**: Styling the UI components.
+- **Mock API**: Simulating backend API interactions for CRUD operations.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Features
+- **Restaurant Management**: Users can add, edit, and delete restaurants.
+- **Form Validation**: Ensures user input is valid before submission.
+- **Pagination**: Display up to 10 restaurants per page.
+- **Mock API**: Simulates API requests for creating, editing, deleting, and fetching restaurants.
+- **Unit and Integration Tests**: Includes tests for critical components and functions.
+  
+## How to Run the Project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 1. Clone the Repository
+First, clone the repository from GitHub:
+```bash
+git clone https://github.com/your-repo/foodiedelight.git
+cd foodiedelight
 
-### `npm run build`
+##Installs Dependencies:
+npm install
+## To start the development server locally:
+npm start
+## To run the test:
+npm test 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ ##To check the test coverage:
+npm test -- --coverage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Test Coverage Summary:
+Statements: 73.18%
+Branches: 68.62%
+Functions: 76.31%
+Lines: 74.68%
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Time Breakdown: 
 
-### `npm run eject`
+Project Development Breakdown 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Initial Setup	             15 minutes
+2. UI Development	             2.5 hours
+3. Form and Input Validation	 1.5 hours
+4. Mock API Setup	    	     1 hour
+5. Pagination Implementation	 1.5 hour	
+6. Testing (Unit & Integration)	 2.5 hours
+7. Error Handling and Edge Cases 1.5 hours
+8. Documentation	         	 1 hour
+9. Final Code Review             1 hour
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Note: These are not exact times but close to the mentioned time.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Screenshots
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 1. **Add Restaurant Form**
+![Add Restaurant Form](./src/screenshots/Form.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 2. **Add Restaurant Form with Validations**
+![Add Restaurant Form with Validations](./src/screenshots/FormValidations.png)
 
-### Code Splitting
+### 3. **Add Restaurant Form with Duplicate Name Validation**
+![Duplicate Name Validation](./src/screenshots/DuplicateNameError.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 4. **Restaurant List with Scroll and Pagination with Edit and Delete**
+![Restaurant List](./src/screenshots/RestaurantList.png)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+
+
+
+
+
+
+
+

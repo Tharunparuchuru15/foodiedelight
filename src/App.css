@@ -1,38 +1,231 @@
-.App {
+/* General Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+/* Header */
+h1 {
   text-align: center;
+  font-size: 2.5rem;
+  color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Form Container */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+form div {
+  margin-bottom: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Label Styles */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Input Fields */
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Buttons */
+button {
+  background-color: #4caf50;
   color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #45a049;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Restaurant List Styling */
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+
+li strong {
+  min-width: 200px; /* Fixed width for the name column */
+  font-weight: bold;
+  color: #333;
+}
+
+
+
+li div {
+  display: flex;
+  justify-content: space-between;
+}
+
+li div button {
+  margin-left: 10px;
+}
+/* Buttons inside the list */
+li .edit-btn {
+  background-color: #28a745; /* Green */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+li .edit-btn:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+li .delete-btn {
+  background-color: #ff4c4c; /* Red (delete) */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+li .delete-btn:hover {
+  background-color: #e53b3b; /* Darker red on hover */
+}
+
+
+/* Scrollable List Container */
+.restaurant-list-container {
+  max-height: 300px; /* You can adjust this height */
+  overflow-y: auto;
+  margin-top: 20px;
+}
+
+/* Error Messages */
+.error {
+  color: red;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.loading {
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+  form {
+    max-width: 90%;
+    padding: 15px;
   }
-  to {
-    transform: rotate(360deg);
+
+  button {
+    width: 100%;
+    margin-top: 10px;
   }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  li button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .restaurant-list-container {
+    max-height: 400px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  form {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 8px;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  li button {
+    width: 100%;
+    margin-top: 5px;
+  }
+}
+
+/* Pagination Styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.page-item {
+  list-style: none;
+  margin: 0 5px;
+  /* background-color: #ccc; */
+}
+
+.page-link {
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color:rgb(157, 225, 157)
+}
+
+.page-link:hover {
+  background-color: darkgreen; 
+}
+
+.page-item.active .page-link {
+  background-color: #4caf50;
+  color: white;
+  border: 1px solid #4caf50;
 }
